@@ -6,20 +6,35 @@
 		<link rel="stylesheet" href="style.css">
     </head>
     <body>
-		<form action="results.html">
+		<form action="institutionResult.html">
 			<input type="text" name="input" value="Name or Keyword">
 			<input type="submit" value="Search">
 		</form>
-		<a href="#">Nearby</a> <a href="search.html">Advance search</a>
+		Search by 
+		<select>
+			<option value="all">name</option>
+			<option value="Malls">major</option>
+			<option value="Medical">state</option>
+		</select><br/>
+		<input type="checkbox" name="#" value="#"> University
+		<input type="checkbox" name="#" value="#"> College<br>
+		<input type="checkbox" name="#" value="#"> Public
+		<input type="checkbox" name="#" value="#"> Private<br>
 		<p>Recent search</p>
 		<table>
 		<tr>
 			<td><a href="anemityNearInsitution.html"><img src="images/logo1.gif" alt="logo1"></a></td>
-			<td><a href="anemityNearInsitution.html">Lorem College</a><br/>Washington, CA</td>
+			<td>
+				<a href="anemityNearInsitution.html">Lorem College</a><br/>
+				Public University<br/>
+				Washington, CA
+			</td>
 		</tr>
 		<tr>
 			<td><a href="anemityNearInsitution.html"><img src="images/logo2.gif" alt="logo2"></a></td>
-			<td><a href="anemityNearInsitution.html">Ipsum College</a><br/>New York, NY</td>
+			<td><a href="anemityNearInsitution.html">Ipsum College</a><br/>
+				Private University<br/>New York, NY
+			</td>
 		</tr>
 		</table>
     </body>
