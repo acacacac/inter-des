@@ -11,20 +11,14 @@
 
     <title>Interaction Design Prototype</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
     <link href="css/metisMenu.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
     <link href="css/sb-admin-2.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -36,7 +30,6 @@
 
     <div id="wrapper">
 
-        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,27 +40,10 @@
                 </button>
                 <a class="navbar-brand" href="index.html"><i class="fa fa-home fa-fw"></i> ID Prototype</a>
             </div>
-            <!-- /.navbar-header -->
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-						
-							<!------------------------ Begin Search ----------------------->
-						
-							<form action="anemitySearch.html" class="input-group custom-search-form">
-								<input type="text" name="input" class="form-control" placeholder="Search...">
-								<span class="input-group-btn">
-									<button class="btn btn-default" type="submit">
-										<i class="fa fa-search"></i>
-									</button>
-								</span>
-							</form>
-                            
-							<!-------------------------- End Search ------------------------>
-							
-                        </li>
                         <li>
                             <a href="index.html"><i class="fa fa-building fa-fw"></i> Search Institutions</a>
                         </li>
@@ -79,18 +55,26 @@
                         </li>
                     </ul>
                 </div>
-                <!-- /.sidebar-collapse -->
             </div>
-            <!-- /.navbar-static-side -->
         </nav>
 
-        <!-- Page Content -->
         <div id="page-wrapper">
 		
 						<!------------------------- Begin Content ----------------------->
 					
 			<div class="row">
 				<p></p>
+				<div class="col-lg-6">
+					<form action="anemitySearch.html">
+						<div class="form-group input-group">
+							<input type="text" class="form-control" placeholder="Search Amenity...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" name="input" type="submit"><i class="fa fa-search"></i>
+								</button>
+							</span>
+						</div>
+					</form>
+				</div>
                 <div class="col-lg-4">
 					<iframe width="100%" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=restaurants+near+Harvard+University,+Cambridge,+MA,+United+States&key=AIzaSyClLK3VB1sPc1g49Kmp8VIxw-4fspipSE4"></iframe>
 				</div>
@@ -109,9 +93,7 @@
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <strong class="primary-font"><a href="anemityDetail.html">Lorem Restaurant</a></strong>
-                                            <!--<small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>-->
+                                            
                                         </div>
                                         <p>
                                             <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
@@ -129,9 +111,7 @@
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <strong class="primary-font"><a href="anemityDetail.html">Lorem Church</a></strong>
-                                            <!--<small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>-->
+                                            
                                         </div>
                                         <p>
                                             <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
@@ -148,9 +128,7 @@
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <strong class="primary-font"><a href="anemityDetail.html">Lorem Mall</a></strong>
-                                            <!--<small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>-->
+                                            
                                         </div>
                                         <p>
                                             <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
@@ -168,9 +146,7 @@
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <strong class="primary-font"><a href="anemityDetail.html">Lorem Apartment</a></strong>
-                                            <!--<small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>-->
+                                            
                                         </div>
                                         <p>
                                             <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
@@ -188,9 +164,7 @@
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <strong class="primary-font"><a href="anemityDetail.html">Lorem Hospital</a></strong>
-                                            <!--<small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>-->
+                                            
                                         </div>
                                         <p>
                                             <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
@@ -210,21 +184,15 @@
 						<!-------------------------- End Content ------------------------>
 						
         </div>
-        <!-- /#page-wrapper -->
 
     </div>
-    <!-- /#wrapper -->
 
-    <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
     <script src="js/metisMenu.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
     <script src="js/sb-admin-2.js"></script>
 
 </body>

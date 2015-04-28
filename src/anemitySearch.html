@@ -1,75 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>GW Institutions Directory</title>
-    </head>
-    <body>
-		<form action="#">
-			<input type="text" name="input" value="Name or Keyword">
-			<input type="submit" value="Search">
-		</form>
-		Anemities type 
-		<select>
-			<option value="all">All</option>
-			<option value="Malls">Shopping Malls</option>
-			<option value="Medical">Medical Centres</option>
-			<option value="Medical">Places of Worship</option>
-			<option value="Restaurants">Restaurants</option>
-			<option value="Apartments">Apartments</option>
-		</select>
-		<p> </p>
-		<table>
-		<tr>
-			<td><a href="anemityDetail.html"><img src="images/mall.png" alt="mall" height="100px"></a></td>
-			<td>
-				<a href="anemityDetail.html">Lorem Mall</a><br/>
-				<img src="images/review_star.jpg" alt="review star" height="20px"><br/>
-				Washington, CA<br/>
-				$1 ~ $10<br/>
-				3.26 km
-			</td>
-		</tr>
-		<tr>
-			<td><a href="anemityDetail.html"><img src="images/hospital.png" alt="hospital" height="100px"></a></td>
-			<td>
-				<a href="anemityDetail.html">Lorem Hospital</a><br/>
-				<img src="images/review_star.jpg" alt="review star" height="20px"><br/>
-				Washington, CA<br/>
-				$1 ~ $10<br/>
-				3.26 km
-			</td>
-		</tr>
-		<tr>
-			<td><a href="anemityDetail.html"><img src="images/church1.jpg" alt="church" height="100px"></a></td>
-			<td>
-				<a href="anemityDetail.html">Lorem Church</a><br/>
-				<img src="images/review_star.jpg" alt="review star" height="20px"><br/>
-				Washington, CA<br/>
-				$1 ~ $10<br/>
-				3.26 km
-			</td>
-		</tr>
-		<tr>
-			<td><a href="anemityDetail.html"><img src="images/apartment.png" alt="apartment" height="100px"></a></td>
-			<td>
-				<a href="anemityDetail.html">Lorem Apartment</a><br/>
-				<img src="images/review_star.jpg" alt="review star" height="20px"><br/>
-				New York, NY<br/>
-				$1 ~ $10<br/>
-				2.34 km
-			</td>
-		</tr>
-		<tr>
-			<td><a href="anemityDetail.html"><img src="images/restaurant.jpg" alt="restaurant" height="100px"></a></td>
-			<td>
-				<a href="anemityDetail.html">Lorem Restaurant</a><br/>
-				<img src="images/review_star.jpg" alt="review star" height="20px"><br/>
-				Washington, CA<br/>
-				$1 ~ $10<br/>
-				3.26 km
-			</td>
-		</tr>
-		</table>
-    </body>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Interaction Design Prototype</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-home fa-fw"></i> ID Prototype</a>
+            </div>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-building fa-fw"></i> Search Institutions</a>
+                        </li>
+                        <li>
+                            <a href="anemityNearInsitution.html"><i class="fa fa-map-marker fa-fw"></i> Search Amenities</a>
+                        </li>
+                        <li>
+                            <a>Current: Lorem University</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper">
+		
+						<!------------------------- Begin Content ----------------------->
+					
+			<div class="row">
+				<p></p>
+				<div class="col-lg-6">
+					<form action="#">
+						<div class="form-group input-group">
+							<input type="text" class="form-control" placeholder="Search Amenity..." value="Lorem">
+							<span class="input-group-btn">
+								<button class="btn btn-default" name="input" type="submit"><i class="fa fa-search"></i>
+								</button>
+							</span>
+						</div>
+						<div class="form-group">
+							<label>Amenity type </label>
+							<select class="form-control">
+								<option value="all">All</option>
+								<option value="Malls">Shopping Malls</option>
+								<option value="Medical">Medical Centres</option>
+								<option value="Medical">Places of Worship</option>
+								<option value="Restaurants" selected>Restaurants</option>
+								<option value="Apartments">Apartments</option>
+							</select>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<p></p>
+				<div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <i class="fa fa-search"></i> Search Result
+                        </div>
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+										<a href="anemityDetail.html"><img src="images/restaurant.jpg" alt="#" style="height: 100px;width: 100px;padding: 5px"/></a>
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font"><a href="anemityDetail.html">Lorem Restaurant</a></strong>
+                                            
+                                        </div>
+                                        <p>
+                                            <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
+											<br/>
+											Washington, CA<br/>
+											$1 ~ $10<br/>
+											0.4 km
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+										<a href="anemityDetail.html"><img src="images/church1.jpg" alt="#" style="height: 100px;width: 100px;padding: 5px"/></a>
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font"><a href="anemityDetail.html">Lorem Church</a></strong>
+                                            
+                                        </div>
+                                        <p>
+                                            <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
+											<br/>
+											Washington, CA<br/>
+											0.2 km
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+										<a href="anemityDetail.html"><img src="images/mall.png" alt="#" style="height: 100px;width: 100px;padding: 5px"/></a>
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font"><a href="anemityDetail.html">Lorem Mall</a></strong>
+                                            
+                                        </div>
+                                        <p>
+                                            <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
+											<br/>
+											Washington, CA<br/>
+											$10 ~ $1000<br/>
+											0.7 km
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+										<a href="anemityDetail.html"><img src="images/apartment.png" alt="#" style="height: 100px;width: 100px;padding: 5px"/></a>
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font"><a href="anemityDetail.html">Lorem Apartment</a></strong>
+                                            
+                                        </div>
+                                        <p>
+                                            <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
+											<br/>
+											Washington, CA<br/>
+											$250 ~ $500<br/>
+											0.6 km
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+										<a href="anemityDetail.html"><img src="images/hospital.png" alt="#" style="height: 100px;width: 100px;padding: 5px"/></a>
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font"><a href="anemityDetail.html">Lorem Hospital</a></strong>
+                                            
+                                        </div>
+                                        <p>
+                                            <i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star" style="color: yellow"></i><i class="fa fa-star-half-o" style="color: yellow"></i><i class="fa fa-star-o" style="color: yellow"></i>
+											<br/>
+											Washington, CA<br/>
+											$10 ~ $100<br/>
+											0.5 km
+                                        </p>
+                                    </div>
+                                </li>
+							</ul>
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+						<!-------------------------- End Content ------------------------>
+						
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/metisMenu.min.js"></script>
+
+    <script src="js/sb-admin-2.js"></script>
+
+</body>
+
 </html>
